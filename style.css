@@ -1,84 +1,122 @@
-.main-content {
+.main-content{
     height: 1000px;
-    display: grid;
-    grid-template-columns: 300px 700px;
     width: 90%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 300px 700px;
 }
-.left-section {
-    grid-column: span 1;
-    background-color: PaleTurquoise;
+.left-section{
+    grid-area: 1/1/3/2;
+    column-span: span 1;
+    background-color: rgb(46, 45, 45);
 }
-.right-section {
-    grid-column: span 1/ span 2;
-    background-color: LightPink;    
-}
-.left-content    {
+.left-content{
     padding: 1rem;
+    color: white;
 }
-.profile-image   {
-    display: block;
-    margin: auto;
-    border: 5px white solid;
-    border-radius: 30%;
-    width: 60%;
-}
-.name   {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.2rem;
-    padding: 0.8rem;
-    letter-spacing: 0.02px;
-}
-.designation    {
-    text-align: center;
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding-bottom: 0.5rem;
-}
-.description    {
-    text-align: center;
-    font-size: 0.75rem;
-    padding: 1rem;
-}
-.icon{
-    display: inline;
-    padding: 20px;
-    text-align: center;
-    margin: 5px 2px;
-    font-size: 30px;
-    width: 50px;
-}
-.skills {
-    font-size: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-}
-.skill-name {
-    font-size: 0.65rem;
-    font-weight: 600;
-    text-align: left;
-    padding-bottom: 0.5rem;
-}
-.progress-bar   {
-    border: 1px white solid;
-    height: 4px;
+.right-section{
+    grid-area: 1/2/3/3;
+    column-span: span 1/span 2;
     background-color: white;
 }
-.right-main-content {
-    padding: 32px 48px 32px 48px;
+.right-main-content{
+    padding: 2rem 3rem;
 }
-.right-title    {
-    text-transform:uppercase;
-    font-weight:700;
-    font-size:1.2rem;
-    letter-spacing:1px;
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+    height:350px;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.icon{
+    width: 17px;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: 25px 250px;
+}
+.skills-content{
+    margin-top: 2rem;
+
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    border-radius: 2px;
+    height: 4px;
+    margin-bottom: 1rem;
+}
+.common-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.para{
+    width: 90%;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
     padding: 0.5rem;
+    letter-spacing: 1px;
 }
-@media (max-width: 673px)   {
-    .main-content {
-        grid-template-columns: repeat(1, 1fr);
+.text-space{
+    padding-left: 8px;
+}
+.margin{
+    margin-top: 5px;
+}
+@media screen and (max-width:673px) {
+    .main-content{
+        display: block;
+        grid-template-columns: repeat(1fr,1);
     }
 }
 *{
@@ -88,5 +126,4 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /* Write CSS code below */
