@@ -1,104 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .main-content{
-    height: 1000px;
     width: 90%;
     display: grid;
-    grid-template-rows: 20% 80%;
     grid-template-columns: 300px 700px;
+    grid-template-rows: 1100px;
 }
 .left-section{
-    grid-area: 1/1/3/2;
-    column-span: span 1;
-    background-color: rgb(46, 45, 45);
+   
+}
+.right-section{
+    
+}
+@media screen and (max-width:673px) {
+    .main-content{
+        grid-template-columns:repeat(1,1fr);
+    }
+}
+.icon{
+    width: 18px;
 }
 .left-content{
     padding: 1rem;
+    background-color: rgb(49, 48, 48);
     color: white;
-}
-.right-section{
-    grid-area: 1/2/3/3;
-    column-span: span 1/span 2;
-    background-color: white;
+    height: 1100px;
 }
 .right-main-content{
     padding: 2rem 3rem;
-}
-.profile-image{
-    display: block;
-    margin: auto;
-    border: 5px solid white;
-    border-radius: 30%;
-    width: 60%;
-    height:350px;
-}
-.name{
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.02px;
-    padding: 0.8rem;
-}
-.designation{
-    font-size: 1rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid white;
-}
-.description{
-    font-size: 0.75rem;
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-.icon{
-    width: 17px;
-}
-.social-media{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 1rem;
-}
-.contact-detail{
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-}
-.contact-info{
-    display: grid;
-    grid-template-columns: 25px 250px;
-}
-.skills-content{
-    margin-top: 2rem;
-
-}
-.skills{
-    font-size: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1rem 0.5rem;
-}
-.skill-name{
-    font-size: 0.65rem;
-    font-weight: 0.65rem;
-    text-align: left;
-    text-transform: uppercase;
-    padding-bottom: 0.5rem;
-}
-.progress-bar{
-    border: 1px solid white;
-    border-radius: 2px;
-    height: 4px;
-    margin-bottom: 1rem;
-}
-.common-part{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.para{
-    width: 90%;
 }
 .right-title{
     text-transform: uppercase;
@@ -107,23 +41,68 @@
     padding: 0.5rem;
     letter-spacing: 1px;
 }
+.common-part{
+    display: flex;
+}
 .text-space{
-    padding-left: 8px;
+    padding: 0.5rem;
 }
-.margin{
-    margin-top: 5px;
+.para{
+    width: 90%;
 }
-@media screen and (max-width:673px) {
-    .main-content{
-        display: block;
-        grid-template-columns: repeat(1fr,1);
-    }
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.name{
+   font-size: 1.2rem;
+   font-weight: 700;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.02px;
+   padding: 0.8rem; 
 }
-/* Write CSS code below */
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom:2px solid white;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;
+   justify-content: space-evenly;
+}
+.contact-info{
+    display: flex;
+    margin: 1rem 1rem;
+}
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding:1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+.progress-bar{
+    border:1px solid white;
+    height: 4px;
+}
